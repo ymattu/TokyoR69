@@ -469,9 +469,9 @@ hindi_morph <- function(data, text_col) {
 ##' @examples
 ##' aa <- 3
 ##' bb <- 2
-##' cc <- kaijou(3, 2)
+##' cc <- ruijou(3, 2)
 ##' @export
-kaijou <- function (a, b) {
+ruijou <- function (a, b) {
   res <- a ^ b
   return(res)
 }
@@ -518,8 +518,8 @@ kaijou <- function (a, b) {
 
 ## テストの書き方
 - 最低限
-- 例: `kaijou()` 関数
-- test-kaijou.R
+- 例: `ruijou()` 関数
+- test-ruijou.R
 
 ```{r, echo=FALSE}
 library(testthat)
@@ -527,10 +527,10 @@ library(testthat)
 
 
 ```{r, eval=FALSE}
-context("test-kaijou.R")
+context("test-ruijou.R")
 
 test_that("multiplication works", {
-  res <- kaijou(2,3)
+  res <- ruijou(2,3)
   expect_equal(res, 8)
 })
 ```
